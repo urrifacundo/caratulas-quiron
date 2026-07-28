@@ -16,7 +16,7 @@ Esta guía está destinada al personal subalterno para la correcta clasificació
   <tr><td><b>Asalto en Finca</b></td><td>Ingreso violento a vivienda con moradores o por escalamiento.</td></tr>
   <tr><td><b>Asalto en Vía Pública</b></td><td>Ataque directo a transeúntes mediante amenazas o armas.</td></tr>
   <tr><td><b>Bicicleta</b></td><td>Sustracción de bicicletas mediante amenaza o fuerza.</td></tr>
-  <tr><td><b>Choferes</b></td><td>Asaltos a conductores de transporte público o remises.</td></tr>
+  <tr><td><b>Choferes</b></td><td>Asaltos a conductores de transporte público, remises, taxis o choferes de APP (DIDI - UBER ETC).</td></tr>
   <tr><td><b>Entradera</b></td><td>Ingreso violento aprovechando apertura de puertas o portones.</td></tr>
   <tr><td><b>Escruche</b></td><td>Robo en finca o local sin moradores forzando aberturas.</td></tr>
   <tr><td><b>Mechera</b></td><td>Sustracción en comercios con amenazas o violencia al ser descubiertos.</td></tr>
