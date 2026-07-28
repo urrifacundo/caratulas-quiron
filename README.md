@@ -142,7 +142,7 @@ Esta guía está destinada al personal subalterno para la correcta clasificació
     <th align="left">Descripción y Criterios Operativos</th>
   </tr>
   <tr><td><b>Asalto</b></td><td>Sustracción de vehículo mediante intimidación y violencia directa.</td></tr>
-  <tr><td><b>Levantamiento</b></td><td>Sustracción de vehículo estacionado sin moradores ni testigos.</td></tr>
+  <tr><td><b>Levantamiento</b></td><td>Sustracción de vehículo estacionado sin moradores.</td></tr>
   <tr><td><b>Motochorro</b></td><td>Sustracción donde los malvivientes se movilizan en motovehiculo.</td></tr>
 </table>
 </details>
