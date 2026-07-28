@@ -1,6 +1,6 @@
 # Guía Operativa de Carátulas y Modalidades - Quiron
 
-Esta guía está destinada al personal subalterno para la correcta clasificación y carga de hechos delictivos. Haga clic sobre cada carátula para desplegar sus modalidades.
+Esta guía está destinada para la correcta clasificación y carga de hechos delictivos DENTRO DE QUIRON. Haga clic sobre cada carátula para desplegar sus modalidades.
 
 <details>
 <summary><b>ROBO (Hacer clic para desplegar)</b></summary>
