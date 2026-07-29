@@ -2,8 +2,11 @@
 
 Esta guía está destinada para la correcta clasificación, carga de hechos delictivos y estandarización de criterios operativos DENTRO DE QUIRON.
 
-<div style="background-color: #f1f8ff; border-left: 5px solid #0366d6; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
-  <b>⚠️ Aviso operativo:</b> Verificar siempre la concordancia entre la franja horaria, la jurisdicción y la hora real del hecho antes de confirmar la carga en el sistema.
+<div style="background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 14px 18px; margin: 15px 0; border-radius: 4px; color: #856404;">
+  <b>⚠️ AVISO OPERATIVO OBLIGATORIO:</b> 
+  <br>Se solicita al personal <b>revisar detenidamente cada ítem</b> antes de confirmar y enviar la denuncia en el sistema. 
+  <br>• Verifique rigurosamente la concordancia entre la <b>franja horaria</b>, la <b>jurisdicción</b> y la <b>hora real del hecho</b>. 
+  <br>• Controle que todos los campos obligatorios y las observaciones estén completos y sin errores para evitar inconsistencias operativas.
 </div>
 
 ---
@@ -30,7 +33,7 @@ Esta guía está destinada para la correcta clasificación, carga de hechos deli
   <tr><td><b>Modalidad</b></td><td>Colocar según el instructivo técnico correspondiente a cada delito analizado.</td></tr>
   <tr><td><b>Imputados</b></td><td>Registrar Femenino/Masculino. Si son varios o de distintos géneros, consignar ambos. El número exacto y desglose se detalla en Observaciones.</td></tr>
   <tr><td><b>Víctimas</b></td><td>Registrar Femenino/Masculino y consignar ambos si corresponde. Detallar cantidad y menores en Observaciones.</td></tr>
-  <tr><td><b>Menores</b></td><td>Registrar Femenino/Masculino. De los Imputados. Detallar desglose de cantidad y género en Observaciones si es necesario.</td></tr>
+  <tr><td><b>Menores</b></td><td>Registrar Femenino/Masculino. Detallar desglose de cantidad y género en Observaciones si es necesario.</td></tr>
   <tr><td><b>Lesionados</b></td><td>Registrar Sí o No. En Observaciones se especifica el tipo de lesión (golpes, arma de fuego, arma blanca). Exclusivamente hechos dolosos.</td></tr>
   <tr><td><b>Armas</b></td><td>Tipificar el elemento utilizado: Fuego, Blanca o Impropia.</td></tr>
   <tr><td><b>Observaciones</b></td><td>Campo abierto para volcar todo dato relevante, número exacto de víctimas/imputados discriminados por género, hallazgos de rodados, etc.</td></tr>
