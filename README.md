@@ -1,9 +1,50 @@
-# Guía Operativa de Carátulas y Modalidades - Quiron
+# 🛡️ Guía Operativa Integral del Sistema Quirón
 
-Esta guía está destinada para la correcta clasificación y carga de hechos delictivos DENTRO DE QUIRON. Haga clic sobre cada carátula para desplegar sus modalidades.
+Esta guía está destinada para la correcta clasificación, carga de hechos delictivos y estandarización de criterios operativos DENTRO DE QUIRON.
+
+<div style="background-color: #f1f8ff; border-left: 5px solid #0366d6; padding: 12px 16px; margin: 15px 0; border-radius: 4px;">
+  <b>⚠️ Aviso operativo:</b> Verificar siempre la concordancia entre la franja horaria, la jurisdicción y la hora real del hecho antes de confirmar la carga en el sistema.
+</div>
+
+---
+
+## 📑 SECCIÓN 1: Guía Completa de Ítems para la Carga
+
+<details>
+<summary><b>📖 Ver Guía de Campos del Sistema Quirón (Hacer clic para desplegar)</b></summary>
+<br>
+<table width="100%" border="1" cellpadding="8" style="border-collapse: collapse;">
+  <tr style="background-color: #f6f8fa;">
+    <th align="left" width="25%">Campo</th>
+    <th align="left" width="75%">Criterio e Instrucciones de Carga</th>
+  </tr>
+  <tr><td><b>Partido</b></td><td>Seleccionar el partido donde fue cometido el hecho (desplegable).</td></tr>
+  <tr><td><b>Localidad</b></td><td>Seleccionar la localidad donde fue cometido el hecho (desplegable).</td></tr>
+  <tr><td><b>Jurisdicción</b></td><td>Seleccionar la dependencia policial a la que le corresponde el lugar del hecho (dependencia interviniente).</td></tr>
+  <tr><td><b>Lugar del hecho</b></td><td>Dirección exacta donde se cometió el hecho.</td></tr>
+  <tr><td><b>Coordenadas</b></td><td>Se cargan de manera automática; de lo contrario, utilizar Google Maps para buscar y copiar las coordenadas exactas.</td></tr>
+  <tr><td><b>Fecha del hecho</b></td><td>Colocar la fecha en que fue cometido el hecho (o fecha de denuncia si se desconoce con precisión).</td></tr>
+  <tr><td><b>Hora del hecho</b></td><td>Horario en el que ocurrió el hecho. Si no consta en el acta, colocar excepcionalmente el horario de carga en el SID. <br><b>Franjas horarias de análisis:</b> 00:00 a 06:00 hs, 06:00 a 12:00 hs, 12:00 a 18:00 hs, y 18:00 a 24:00 hs.</td></tr>
+  <tr><td><b>Tipo de lugar</b></td><td>Locación física del ilícito (finca, vía pública, comercio, establecimiento educativo, etc.) mediante desplegable.</td></tr>
+  <tr><td><b>Carátula</b></td><td>Calificación legal del hecho (desplegable). <i>Tildar la casilla correspondiente en caso de ser en grado de tentativa.</i></td></tr>
+  <tr><td><b>Modalidad</b></td><td>Colocar según el instructivo técnico correspondiente a cada delito analizado.</td></tr>
+  <tr><td><b>Imputados</b></td><td>Registrar Femenino/Masculino. Si son varios o de distintos géneros, consignar ambos. El número exacto y desglose se detalla en Observaciones.</td></tr>
+  <tr><td><b>Víctimas</b></td><td>Registrar Femenino/Masculino y consignar ambos si corresponde. Detallar cantidad y menores en Observaciones.</td></tr>
+  <tr><td><b>Menores</b></td><td>Registrar Femenino/Masculino. De los Imputados. Detallar desglose de cantidad y género en Observaciones si es necesario.</td></tr>
+  <tr><td><b>Lesionados</b></td><td>Registrar Sí o No. En Observaciones se especifica el tipo de lesión (golpes, arma de fuego, arma blanca). Exclusivamente hechos dolosos.</td></tr>
+  <tr><td><b>Armas</b></td><td>Tipificar el elemento utilizado: Fuego, Blanca o Impropia.</td></tr>
+  <tr><td><b>Observaciones</b></td><td>Campo abierto para volcar todo dato relevante, número exacto de víctimas/imputados discriminados por género, hallazgos de rodados, etc.</td></tr>
+</table>
+</details>
+
+---
+
+## 🔍 SECCIÓN 2: Guía Operativa de Carátulas y Modalidades
+
+Haga clic sobre cada carátula para desplegar sus modalidades o utilice el buscador inteligente en tiempo real:
 
 <div style="margin: 20px 0;">
-  <input type="text" id="buscadorGuia" onkeyup="filtrarGuia()" placeholder="🔍 Escriba para buscar carátula, modalidad o criterio..." style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #ccc; border-radius: 6px;">
+  <input type="text" id="buscadorGuia" onkeyup="filtrarGuia()" placeholder="🔍 Escriba para buscar carátula, modalidad o criterio..." style="width: 100%; padding: 12px; font-size: 16px; border: 2px solid #ccc; border-radius: 6px; box-sizing: border-box;">
 </div>
 
 <div id="contenedorGuia">
@@ -194,19 +235,20 @@ function filtrarGuia() {
 
   for (let i = 0; i < detalles.length; i++) {
     let detalle = detalles[i];
+    if (i === 0) continue; // Omitimos el primer details que corresponde a la guía de campos superior
+
     let filas = detalle.getElementsByTagName('tr');
     let encontroEnDetalle = false;
 
-    // Si el buscador está vacío, cerramos todos (o dejamos el robo abierto) y mostramos todo
     if (filtro === "") {
-      detalle.open = (i === 0); // Deja abierto solo el primero (Robo) por comodidad
+      detalle.open = (i === 1); // Deja abierto solo el primero de carátulas (Robo) por comodidad
+      detalle.style.display = "";
       for (let j = 1; j < filas.length; j++) {
         filas[j].style.display = "";
       }
       continue;
     }
 
-    // Recorremos las filas de la tabla (saltando la cabecera j=1)
     for (let j = 1; j < filas.length; j++) {
       let fila = filas[j];
       let textoFila = fila.textContent.toLowerCase();
@@ -219,7 +261,6 @@ function filtrarGuia() {
       }
     }
 
-    // Si coincide con algo de esta categoría, la abrimos automáticamente y la mostramos
     if (encontroEnDetalle) {
       detalle.open = true;
       detalle.style.display = "";
