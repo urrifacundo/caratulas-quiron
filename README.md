@@ -142,7 +142,7 @@ Esta guía está destinada para la correcta clasificación y carga de hechos del
     <th align="left">Descripción y Criterios Operativos</th>
   </tr>
   <tr><td><b>Asalto</b></td><td>Sustracción de vehículo mediante intimidación y violencia directa.</td></tr>
-  <tr><td><b>Levantamiento</b></td><td>Sustracción de vehículo estacionado sin moradores.</td></tr>
+  <tr><td><b>Levantamiento</b></td><td>Sustracción del vehículo estacionado en la vía pública sin moradores ni testigos directos, usualmente mediante el uso de llaves amaestradas, puenteo de cables o remolque.</td></tr>
   <tr><td><b>Motochorro</b></td><td>Sustracción donde los malvivientes se movilizan en motovehiculo.</td></tr>
 </table>
 </details>
