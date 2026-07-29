@@ -35,7 +35,7 @@ Esta guía está destinada para la correcta clasificación, carga de hechos deli
   <tr><td><b>Víctimas</b></td><td>Registrar Femenino/Masculino y consignar ambos si corresponde. Detallar cantidad y menores en Observaciones.</td></tr>
   <tr><td><b>Menores</b></td><td>Registrar Femenino/Masculino. Detallar desglose de cantidad y género en Observaciones si es necesario.</td></tr>
   <tr><td><b>Lesionados</b></td><td>Registrar Sí o No. En Observaciones se especifica el tipo de lesión (golpes, arma de fuego, arma blanca). Exclusivamente hechos dolosos.</td></tr>
-  <tr><td><b>Armas</b></td><td>Tipificar el elemento utilizado: Fuego, Blanca o Impropia.</td></tr>
+  <tr><td><b>Armas</b></td><td>Tipificar el elemento utilizado: Fuego, Blanca, Impropia o Ninguna.</td></tr>
   <tr><td><b>Observaciones</b></td><td>Campo abierto para volcar todo dato relevante, número exacto de víctimas/imputados discriminados por género, hallazgos de rodados, etc.</td></tr>
 </table>
 </details>
